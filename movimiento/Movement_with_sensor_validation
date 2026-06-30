@@ -1,0 +1,13 @@
+sensor_ok = True
+position = 0.4
+
+def movement_with_sensor(sensor, pos):
+    if sensor:
+        print(f"Sensor OK. Moving to position {pos}")
+    else:
+        print("Sensor error. Movement stopped.")
+
+movement_with_sensor(sensor_ok, position)
+
+# Note:
+# Cobots always validate sensors before moving to avoid collisions.
