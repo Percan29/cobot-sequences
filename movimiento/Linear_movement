@@ -1,0 +1,12 @@
+points = [0.2, 0.4, 0.6, 0.8]
+
+def linear_movement(points):
+    for p in points:
+        print(f"Moving linearly to position {p}")
+        print("Maintaining straight path")
+
+linear_movement(points)
+
+# Note:
+# Linear movement is used when the cobot must follow a straight path
+# between defined positions. Common in welding and inspection tasks.
